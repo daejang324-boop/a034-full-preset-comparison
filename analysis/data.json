@@ -1,0 +1,337 @@
+{
+  "measurement_date": "2026-10-25",
+  "billing_asof": "2026-10-25T15:46:03.248569+09:00",
+  "benchmark": [
+    {
+      "key": "local",
+      "label": "로컬",
+      "delegated_seconds": 1540.0451438426971,
+      "pure_seconds": 1511.5527698749793,
+      "instruction_seconds": 3882.17,
+      "time_saved_percent": 0.0,
+      "speedup": 1.0,
+      "cpu_seconds": 922.3775680000001,
+      "rss_mib": 2061.40625,
+      "cpu_saved_percent": 0.0,
+      "rss_saved_percent": 0.0,
+      "gross_usd": 0,
+      "local_one_hour_equivalent_seconds": 3600.0
+    },
+    {
+      "key": "gpu1",
+      "label": "Vast 1대",
+      "delegated_seconds": 586.8413119316101,
+      "pure_seconds": 461.4351898508612,
+      "instruction_seconds": 3478.77,
+      "time_saved_percent": 61.89453833364049,
+      "speedup": 2.6242957210588687,
+      "cpu_seconds": 33.607414,
+      "rss_mib": 113.0,
+      "cpu_saved_percent": 96.35643632651743,
+      "rss_saved_percent": 94.51830516182824,
+      "gross_usd": 0.237,
+      "local_one_hour_equivalent_seconds": 1371.7966199889422
+    },
+    {
+      "key": "gpu2",
+      "label": "Vast 2대",
+      "delegated_seconds": 971.2003450393677,
+      "pure_seconds": 368.49367289594375,
+      "instruction_seconds": 3646.63,
+      "time_saved_percent": 36.9368911734598,
+      "speedup": 1.5857131349971578,
+      "cpu_seconds": 44.69512700000001,
+      "rss_mib": 105.203125,
+      "cpu_saved_percent": 95.15435668097254,
+      "rss_saved_percent": 94.89653604184038,
+      "gross_usd": 0.401,
+      "local_one_hour_equivalent_seconds": 2270.2719177554472
+    },
+    {
+      "key": "gpu4",
+      "label": "Vast 4대",
+      "delegated_seconds": 2259.923099040985,
+      "pure_seconds": 150.1973180420464,
+      "instruction_seconds": 4690.19,
+      "time_saved_percent": -46.743951505347404,
+      "speedup": 0.6814590923453221,
+      "cpu_seconds": 136.56128999999999,
+      "rss_mib": 108.40625,
+      "cpu_saved_percent": 85.19464319843478,
+      "rss_saved_percent": 94.74115061017207,
+      "gross_usd": 1.115,
+      "local_one_hour_equivalent_seconds": 5282.782254192506
+    }
+  ],
+  "benchmark_notes": {
+    "common_preparation_excluded_seconds": 2128.157207965851,
+    "last_four_success_seconds": 360.92481207847595,
+    "last_four_success_cost_usd": 0.18,
+    "earlier_four_failed_cost_usd": 0.935,
+    "scope": "Same delegated live Real-ESRGAN + plastic_clear_v2 + final 4K composition. Remote first input.tar transfer start to verified final local recovery; local runner start to verified final file. First rental/bootstrap before input upload and post-recovery visual QA excluded. Failures/recovery/wait after first upload retained.",
+    "resources_scope": "Controller plus child processes; failed attempts included. Whole Mac, common assets, QA and electricity excluded."
+  },
+  "episodes": [
+    {
+      "episode": "a035",
+      "title": "녹취 몇 마디만 믿어도 될까?",
+      "duration_seconds": 54.266666666666666,
+      "instruction_seconds": 9378.156526088715,
+      "machine_id": 137639,
+      "gpu_frames": 1338,
+      "gpu_seconds": 720.1838039879221,
+      "fps": 1.8578590529126076,
+      "render_seconds": 230.94425695796963,
+      "render_location": "local",
+      "final_recovery_or_ready_seconds": 2405.07178401947,
+      "remote_return_seconds": 2142.1028249263763,
+      "overhead_seconds": 1453.9437230735784,
+      "overhead_percent": 60.453236062820494,
+      "setup_upload_seconds": 872.2659718990326,
+      "gross_usd": 0.39,
+      "success_usd": 0.258,
+      "failed_usd": 0.132,
+      "hourly_usd": 0.4272222222222222,
+      "local_cpu_seconds": 772.280243,
+      "local_mean_core_percent": 289.8189827419515,
+      "local_rss_mib": 2451.28125,
+      "local_measurement_partial": true
+    },
+    {
+      "episode": "a036",
+      "title": "유럽 경제가 흔들릴 때 놓치기 쉬운 건?",
+      "duration_seconds": 93.26666666666667,
+      "instruction_seconds": 7543.719572067261,
+      "machine_id": 40438,
+      "gpu_frames": 2508,
+      "gpu_seconds": 748.7147882278077,
+      "fps": 3.3497401673291156,
+      "render_seconds": 87.93450891179964,
+      "render_location": "remote",
+      "final_recovery_or_ready_seconds": 952.5798120498657,
+      "remote_return_seconds": 952.5798120498657,
+      "overhead_seconds": 115.93051491025835,
+      "overhead_percent": 12.170162903283277,
+      "setup_upload_seconds": 51.93111491203308,
+      "gross_usd": 0.231,
+      "success_usd": 0.155,
+      "failed_usd": 0.076,
+      "hourly_usd": 0.4405555555555556,
+      "local_cpu_seconds": 52.31577299999999,
+      "local_mean_core_percent": 5.475534442472471,
+      "local_rss_mib": 93.265625,
+      "local_measurement_partial": false
+    },
+    {
+      "episode": "a037",
+      "title": "비판을 받은 그가 끝내 지키겠다는 건?",
+      "duration_seconds": 94.33333333333333,
+      "instruction_seconds": 5407.513489961624,
+      "machine_id": 40438,
+      "gpu_frames": 2467,
+      "gpu_seconds": 731.895657862071,
+      "fps": 3.3706990518379567,
+      "render_seconds": 78.57001966796815,
+      "render_location": "remote",
+      "final_recovery_or_ready_seconds": 919.2623200416565,
+      "remote_return_seconds": 919.2623200416565,
+      "overhead_seconds": 108.79664251161739,
+      "overhead_percent": 11.835211793156851,
+      "setup_upload_seconds": 50.45312714576721,
+      "gross_usd": 0.232,
+      "success_usd": 0.122,
+      "failed_usd": 0.11,
+      "hourly_usd": 0.4405555555555556,
+      "local_cpu_seconds": 47.54480300000001,
+      "local_mean_core_percent": 5.154787385891334,
+      "local_rss_mib": 96.125,
+      "local_measurement_partial": false
+    },
+    {
+      "episode": "a038",
+      "title": "중국은 왜 회담의 판을 깔까?",
+      "duration_seconds": 55.166666666666664,
+      "instruction_seconds": 4487.508441925049,
+      "machine_id": 149656,
+      "gpu_frames": 1368,
+      "gpu_seconds": 472.5669195926748,
+      "fps": 2.8948281043013684,
+      "render_seconds": 36.88497081026435,
+      "render_location": "remote",
+      "final_recovery_or_ready_seconds": 658.0379951000214,
+      "remote_return_seconds": 658.0379951000214,
+      "overhead_seconds": 148.5861046970822,
+      "overhead_percent": 22.580171024090667,
+      "setup_upload_seconds": 72.77974581718445,
+      "gross_usd": 0.08,
+      "success_usd": 0.08,
+      "failed_usd": 0,
+      "hourly_usd": 0.41388888888888886,
+      "local_cpu_seconds": 36.989797,
+      "local_mean_core_percent": 5.594882998863832,
+      "local_rss_mib": 94.4375,
+      "local_measurement_partial": false
+    }
+  ],
+  "batch": {
+    "gross_usd": 0.933,
+    "failed_usd": 0.318,
+    "successful_usd": 0.615,
+    "failed_cost_percent": 34.08360128617363,
+    "extra_cost_over_success_percent": 51.707317073170735,
+    "observed_credit_usd": 0.31,
+    "approved_credit_usd": 0.318,
+    "credit_difference_usd": 0.008,
+    "net_usd": 0.623,
+    "mean_gross_per_video": 0.23325,
+    "mean_net_per_video": 0.15575,
+    "rented": 9,
+    "failed_rentals": 5,
+    "successful_rentals": 4,
+    "deleted": 9,
+    "remaining": 0,
+    "first_rental_success_count": 1,
+    "total_video_seconds": 297.03333333333336,
+    "gpu_seconds_sum": 2673.3611696704756,
+    "gpu_frames_sum": 7681,
+    "cost_types_usd": {
+      "gpu": 0.875,
+      "disk": 0.037000000000000005,
+      "bwd": 0.018000000000000002,
+      "bwu": 0.003
+    },
+    "local_savings_percent": null
+  },
+  "concurrency": {
+    "rental_intervals": [
+      {
+        "episode": "a035",
+        "instance_id": 57621251,
+        "machine_id": 137639,
+        "start": 1792908189.62098,
+        "end": 1792910327.733388,
+        "successful": true,
+        "cost_usd": 0.258
+      },
+      {
+        "episode": "a035",
+        "instance_id": 57613543,
+        "machine_id": 38442,
+        "start": 1792904493.81129,
+        "end": 1792904967.278153,
+        "successful": false,
+        "cost_usd": 0.054
+      },
+      {
+        "episode": "a035",
+        "instance_id": 57614814,
+        "machine_id": 10673,
+        "start": 1792905115.3539908,
+        "end": 1792905618.182884,
+        "successful": false,
+        "cost_usd": 0.078
+      },
+      {
+        "episode": "a036",
+        "instance_id": 57614190,
+        "machine_id": 60701,
+        "start": 1792904832.489367,
+        "end": 1792905322.089928,
+        "successful": false,
+        "cost_usd": 0.036
+      },
+      {
+        "episode": "a036",
+        "instance_id": 57620357,
+        "machine_id": 40438,
+        "start": 1792907704.714306,
+        "end": 1792908652.3996632,
+        "successful": true,
+        "cost_usd": 0.155
+      },
+      {
+        "episode": "a036",
+        "instance_id": 57616127,
+        "machine_id": 140968,
+        "start": 1792905625.516705,
+        "end": 1792905939.5259898,
+        "successful": false,
+        "cost_usd": 0.04
+      },
+      {
+        "episode": "a037",
+        "instance_id": 57614307,
+        "machine_id": 10673,
+        "start": 1792904883.5031402,
+        "end": 1792905550.086209,
+        "successful": false,
+        "cost_usd": 0.11
+      },
+      {
+        "episode": "a037",
+        "instance_id": 57616139,
+        "machine_id": 40438,
+        "start": 1792905631.518409,
+        "end": 1792906547.588753,
+        "successful": true,
+        "cost_usd": 0.122
+      },
+      {
+        "episode": "a038",
+        "instance_id": 57614374,
+        "machine_id": 149656,
+        "start": 1792904917.026321,
+        "end": 1792905571.467009,
+        "successful": true,
+        "cost_usd": 0.08
+      }
+    ],
+    "rentals": {
+      "maximum": 4,
+      "seconds_by_count": {
+        "0": 1164.4593741893768,
+        "1": 3159.69881772995,
+        "2": 843.1808371543884,
+        "3": 409.59529972076416,
+        "4": 256.9877691268921
+      }
+    },
+    "successful_worker_intervals": [
+      [
+        1792909056.363028,
+        1792909784.8001401,
+        "a035"
+      ],
+      [
+        1792907750.020483,
+        1792908500.519976,
+        "a036"
+      ],
+      [
+        1792905676.9396532,
+        1792906410.713042,
+        "a037"
+      ],
+      [
+        1792904984.421193,
+        1792905460.660497,
+        "a038"
+      ]
+    ],
+    "successful_workers": {
+      "maximum": 1,
+      "seconds_by_count": {
+        "0": 2111.4296493530273,
+        "1": 2688.9492979049683
+      }
+    },
+    "scope": "Local controller epoch timestamps: instance creation confirmed to destroy requested; successful worker command intervals are not pure GPU utilization."
+  },
+  "sources": [
+    "vast-full-preset-20261024/delegated-timings.json",
+    "vast-full-preset-20261024/*/local-resource-summary.json",
+    "latest-four-vast-20261025/run-summary.json",
+    "latest-four-vast-20261025/billing-final.json",
+    "latest-four-vast-20261025/a035..a038/*/state.json"
+  ]
+}
